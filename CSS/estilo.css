@@ -1,0 +1,48 @@
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Monsieur+La+Doulaise&display=swap'); /*Andika New Basic*/
+/* Organizar por ordem em que está na visualization*/
+
+body {line-height:28pt;
+    background-color:rgb(255, 255, 255);
+    font-family:'Andika New Basic';
+
+}
+.título{
+text-align:center;
+}
+.div1 {  box-shadow: rgb(221, 225, 230) 10px 10px 0px;
+    width:300px;
+
+}
+
+table tr{
+border:solid 2px rgba(19, 19, 19, 0.712);
+border-collapse: collapse;
+}
+table tr th {
+    border:solid 2px rgba(19, 19, 19, 0.712);
+    border-collapse: collapse;  
+}
+table tr td {
+    border:solid 2px rgba(19, 19, 19, 0.712);
+    border-collapse: collapse;  
+}
+.divpai{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.divfilho{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subtitle{
+    text-align:center;
+    font-style: italic;
+    font-weight:bolder;
+}
+
+li {
+    list-style-type: none;
+}

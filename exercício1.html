@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="SCRIPT/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>   
+             <h1 class="título">
+                Estatística de saldo de cartão
+            </h1> 
+        </header>
+        <p> Abaixo uma análise de um saldo de cartão de debito, onde se consiste em saber sobre tópicos abaixo:
+            <div class="div1">
+                <ul>
+                    <li>Saldo total</li>
+                    <li> Despesas diarias</li>
+                    <li> Porcentagens correspondentes</li>
+                    <li>Lucro retirado</li> 
+                    <li>Meta para se chegar</li>   
+                </ul>
+            </div>
+        </p>
+        <br>
+        <br>
+        <h2 class="subtitle">Relação de valores</h2>
+        <section>
+            <div class="divpai">
+                <div class="divfilho">
+                    <table onload="mostratab2();">
+                        <tr class="lines">
+                                <th>Saldo Total</th>
+                                <th colspan="2">Despesas diárias</th>
+                                <th>Valor das Despesas</th>
+                                <th>Porcentagem de Perda</th> <!-- O quanto de valor em % se perdeu do total -->
+                                <th> Porcentagem de ganho</th> <!-- O quanto se tm de ganho em cima das despesas em  %-->
+                                <th> Porcentagem de alcance</th> <!-- O quanto se tem que chegar para atingir a meta, em %-->
+                        </tr>
+                        <tr>
+                                <td>
+                                        <a href="#" onclick="mostrasaldo();">Saldo</a>
+                                </td>
+                            
+                                <td colspan="2">
+                                    <a href="#" onclick="mostraDP(0);">despesas</a>
+                                </td>
+                                <td>
+                                    <a href="#" onclick="mostraVD(0);">V.de Despesas
+                                    </a>
+                                </td>
+                           
+                                <td>
+                                    <a href="#" onclick="mostraPP();">P.de Perda</a>
+                                </td> <!--- Porcentagem de Perda, haverá mudaça com JS (PP)-->
+                            
+                                <td>
+                                    <a href="#" onclick="mostraPG();"> P. de Ganho</a>
+                                </td> <!--- Porcentagem de Ganho haverá mudaça com JS(PG)-->
+                              
+                                <td>
+                                    <a href="#" onclick="mostraPA();"> P. de Alcance</a>
+                                </td> <!--- Porcentagem de Alcance (PA), haverá mudaça com JS-->
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+            <br>
+            <br> 
+            <ul>
+                <li id="saldo"></li>
+                <li id="DP"></li>
+                <li id="VD"></li>
+                <li id="PP"></li>
+                <li id="PG"></li>
+                <li id="PA"></li>
+            </ul> 
+        </section>
+    </body>
+</html>
