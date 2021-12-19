@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Scripts/script-array.js"></script>
+        <title> Select inside textarea</title>
+    </head>
+    <body>
+        <form name="produto_compra">
+            <fieldset>
+                <legend>Seleção de Produtos</legend>
+                <br>
+                <br>
+                <select id="pr" onclick="mostra();">
+                    <option value="01" id="1"> </option>
+                    <option value="02" id="2"></option>
+                </select>
+                <textarea name="selecionados" disabled> </textarea>
+                <br>
+                <br>
+                <input type="button" value="Processar" onclick="escreve();">
+                <input type="reset" name="limpar" value="limpar">
+                <input type="button" value="finalizaC" name="finalizar compra" onclick="Newwindow(0);">
+            </fieldset> 
+        </form>
+    </body>
+</html>
